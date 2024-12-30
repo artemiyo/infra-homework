@@ -38,6 +38,11 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
 
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies with Yarn..."
+          yarn install
+
       - name: Build project
         run: |
           echo "Building the project..."
@@ -57,6 +62,11 @@ jobs:
           node-version: '22.11.0'
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
+
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies with Yarn..."
+          yarn install
 
       - name: Run linters
         run: |
@@ -78,6 +88,11 @@ jobs:
           node-version: '22.11.0'
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
+
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies with Yarn..."
+          yarn install
 
       - name: Deploy application
         run: |
