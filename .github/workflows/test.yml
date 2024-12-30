@@ -26,12 +26,12 @@ jobs:
       - dependencies
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22.11.0'
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
 
@@ -46,12 +46,12 @@ jobs:
       - dependencies
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22.11.0'
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
 
@@ -67,12 +67,12 @@ jobs:
       - build
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22.11.0'
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
 
